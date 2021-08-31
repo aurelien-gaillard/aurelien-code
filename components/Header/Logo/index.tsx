@@ -1,4 +1,5 @@
 import React from 'react'
+import * as Styled from './styled'
 
 const Logo = () => {
   // const path = document.querySelectorAll('path')
@@ -6,8 +7,7 @@ const Logo = () => {
   //   console.log(path[i].getTotalLength())
   // }
   return (
-    <svg
-      className='logo'
+    <Styled.SVG
       width='200'
       height='25'
       viewBox='0 0 920 112'
@@ -86,7 +86,7 @@ const Logo = () => {
         strokeWidth='4'
         mask='url(#path-1-outside-1)'
       />
-    </svg>
+    </Styled.SVG>
   )
 }
 
