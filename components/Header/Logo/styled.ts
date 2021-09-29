@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { theme } from '../../../theme'
 
 const lineAnim = keyframes`
                 to {
@@ -10,17 +11,17 @@ const fill = keyframes`
                     fill: transparent;
                 }
                 to {
-                    fill: var(--clr-primary-5);
+                    fill: ${theme.color.primary.main};
                 }
             `
 
 export const SVG = styled.svg`
   path:nth-child(-n + 8) {
-    fill: var(--clr-grey-1);
-    stroke: var(--clr-grey-1);
+    fill: ${theme.color.text.main};
+    stroke: ${theme.color.text.main};
   }
   path:nth-child(n + 9) {
-    stroke: var(--clr-primary-5);
+    stroke: ${theme.color.primary.main};
     stroke-dasharray: 600;
     stroke-dashoffset: 600;
     animation: ${lineAnim} 3s ease forwards, ${fill} 1s ease forwards 1.7s;

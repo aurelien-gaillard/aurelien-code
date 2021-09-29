@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import Header from '../Header'
+import * as Styled from './styled'
 
 interface Props {
   children: ReactNode
@@ -7,10 +8,10 @@ interface Props {
 
 const Layout = ({ children }: Props) => {
   return (
-    <div>
+    <>
       <Header />
-      {children}
-    </div>
+      <Styled.Main>{children}</Styled.Main>
+    </>
   )
 }
 
